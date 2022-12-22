@@ -1,13 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@600;700&family=Roboto+Mono:ital,wght@0,300;1,100&display=swap'); 
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas,  'Inter', sans-serif;
+}
+
+/* The containers */
+.the-full-container{
+ height: 100%;
+ font-family: 'Inter', sans-serif;
+ background-color: black;
+
+ 
+  
+}
+
+.the-second-container{
+ 
+  width: 90%;
+  height: 90vh;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23252C;
+  
+}
+.the-card{
+ 
+  margin: 1% ;
+  width: 25%;
+  height: 90%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column
+
+}
+
+.pic-container{
+ 
+ width: 100%;
+ height: 50%;
+border-radius: 10px 10px 0px 0px;
+background-color: #1A1B21;
+  
+}
+
+
+
+.btn-section{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161619;
+
+}
+
+
+.infp{
+  height: 60%;
+}
+
+.footer{
+  height: 10%;
+  position: relative;
+  display: flex;
+  justify-content:space-evenly;
+  background-color: black;
+
+}
+.about{
+  height: 15%;
+  color: white;
+  font-weight: 700;
+ background: #161619;
+
+}
+.interests{
+  
+    height: 15%;
+    color: white;
+    font-weight: 700;
+   background: #161619;
+ 
+  
+}
+.span{
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-left: 12px;
+}
+/*Info Container */
+
+.my-profile{
+  width: 320px;
+  height: 205px;
+  object-fit: cover;
+  border-radius: 5px;
+
+  
+}
+
+.btn{
+  width: 115px;
+  height: 34px;
+  border-radius: 6px;
+padding-bottom: 5px;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 25%;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.email{
+  background-color: white;
+  margin-right: 5%;
+}
+
+.linkedin{
+  background-color: #5093E2;
+  color: white;
+  margin-right: 5%;
+}
+
+
+.info{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1A1B21;
+  color: white;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  height: 30%;
+ 
+
+}
+
+.my-name{
+  font-weight: 700;
+  margin: 2%;
+  font-size: 25px;
+}
+
+.job-title{
+  color: #F3BF99;
+  font-weight: 400;
+  font-size: 12.8px;
+  text-align: center;
+  line-height: 15px;
+  margin-bottom: 2%;
+}
+a{
+  color: white;
+}
+
+.portfolio-link{
+  font-weight: 400;
+  font-size: 10.24px;
+  ;
+}
+
+
+
+
+/*About/ Interests*/
+
+.para{
+ font-weight: 400;
+ font-family: 'Inter';
+ font-style: normal;
+ font-size: 10.24px;
+ line-height: 15px;
+ margin-left: 12px;
+}
+
+.head{
+  font-weight: 700;
+  font-size: 19px;
+ 
+}
+
+
+
+/*Footer*/
+
+.link{
+  margin-right: 5px;
+  margin-top: 8px;
+  display: inline-block;
+ 
+  
+}
+span{
+  display: inline-block;
+ 
+}
+
+.btn-section{
+  background-color: #161619;
+  
+ 
+}
+
+.soc{
+  margin-top: 5%;
 }
